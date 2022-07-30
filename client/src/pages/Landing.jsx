@@ -14,12 +14,7 @@ function Landing() {
           <h1>
             Job <span>Tracking</span> App
           </h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-            quo hic. Eveniet similique adipisci aperiam facere, molestias
-            nesciunt porro alias libero dolorum accusamus odio officia eaque.
-            Nam, excepturi vitae. Quae?
-          </p>
+          <p>A job searching app.</p>
           <Link to="/register">
             <button className="btn btn-hero">Login</button>
           </Link>

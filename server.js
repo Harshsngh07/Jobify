@@ -36,9 +36,6 @@ app.use(helmet());
 app.use(xss());
 app.use(mongoSanitize());
 
-app.get("/", (req, res) => {
-  res.json("welcome");
-});
 app.get("/api/v1", (req, res) => {
   res.json({ msg: "API" });
 });

@@ -8,6 +8,10 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import path from "path";
 
+import helmet from "helmet";
+import xss from "xss-clean";
+import mongoSanitize from "express-mongo-sanitize";
+
 //db and authentication routes
 import connectDB from "./db/connect.js";
 import authRouter from "./routes/authRoutes.js";

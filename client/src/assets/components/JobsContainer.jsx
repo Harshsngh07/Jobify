@@ -21,7 +21,14 @@ const JobsContainer = () => {
   } = useAppContext();
 
   useEffect(() => {
-    getJobs();
+    //debouncing
+    const cleanTimeout = setTimeout(() => {
+      getJobs();
+    }, 500);
+    return () => {
+      clearTimeout(cleanTimeout);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, search, searchStatus, searchType, sort]);
 
   if (isLoading) {
